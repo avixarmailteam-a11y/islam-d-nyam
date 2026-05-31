@@ -1,0 +1,26 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_final_fields: true
+    prefer_single_quotes: true
+    avoid_print: true
+    always_declare_return_types: true
+    unnecessary_const: true
+    unnecessary_new: true
+    use_key_in_widget_constructors: true
+    avoid_unnecessary_containers: true
+    prefer_const_declarations: true
+    sort_child_properties_last: true
+
+analyzer:
+  errors:
+    missing_required_param: error
+    missing_return: error
+    invalid_assignment: error
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/generated_plugin_registrant.dart"
